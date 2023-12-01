@@ -12,12 +12,10 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
-import org.springframework.http.client.reactive.ClientHttpConnector;
 import org.springframework.test.web.reactive.server.WebTestClient;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-import java.util.Date;
 import java.util.List;
 
 import static org.mockito.Mockito.*;
@@ -74,7 +72,6 @@ public class PrestamoControllerTest {
 
         verify(prestamoRepository, times(1)).save(nuevoPrestamo);
     }
-
 
 
 }
